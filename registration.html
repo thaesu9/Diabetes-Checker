@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration</title>
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/3337d2729a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        table,input,textarea,button
+        {
+            border-radius: 5%;
+        }
+        td
+        {
+            min-width: 25%;
+        }
+    </style>
+</head>
+<body>
+    <center><h2 style="color: rgba(253, 66, 91, 0.886);" class="p-2 pt-4">Register Here</h2>
+    <form action="" method="get">
+        <fieldset style="width: 50%; background-color: rgba(249, 68, 92, 0.525); color: black;" class="rounded card shadow p-3 mb-4"> 
+            <table width="auto" height="auto" border="0">
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" name="txtname" required></td>
+                </tr>
+                <tr>
+                    <td>Email: </td>
+                    <td><input type="email" name="txtemail" required></td>
+                </tr>
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="txtpass" required></td>
+                </tr>
+                <tr>
+                    <td>Age: </td>
+                    <td><input type="number" name="txtage" required></td>
+                </tr>
+                <tr>
+                    <td>Contact Number: </td>
+                    <td><input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required minlength="8" maxlength="11"></td>
+                </tr>
+                <tr>
+                    <td>Emergency Contact Number: </td>
+                    <td><input type="text" onkeypress="return (event.charCode !=8 && event.charCode ==0 || (event.charCode >= 48 && event.charCode <= 57))" required minlength="8" maxlength="11"></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td><input type="radio" name="rdogender" checked value="male">Male
+                    <input type="radio" name="rdogender" value="female">Female </td>
+                </tr>
+                <tr>
+                    <td>Weight (in lb): </td>
+                    <td><input type="number" name="txtweight" required> lb</td>
+                </tr>
+                <tr>
+                    <td>Current Medication: </td>
+                    <td><textarea name="txtmed" placeholder="Please type 'No' if you don't have any." cols="20" rows="4" required ></textarea></td>
+                </tr>
+                <tr>
+                    <td>Allergies: </td>
+                    <td><textarea name="txtmed" placeholder="Please type 'No' if you don't have any." cols="20" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Family Histroy of Diabetes: </td>
+                    <td><input type="radio" name="rdofamily" checked value="yes">Yes
+                    <input type="radio" name="rdofamily" value="no">No </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="checkbox" name="chkterms"> Agreed Terms and Conditions </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register" name="btnregister" class="rounded px-2 py-1 mx-2 my-2" style="background-color: rgba(253, 66, 91, 0.886); color: white; border: 1px solid rgba(253, 35, 64, 0.886);"></td>
+                    <td><input type="button" value="Back" onclick="login_back();" class="rounded px-2 py-1 mx-2 my-2" style="background-color: rgba(253, 66, 91, 0.886); color: white; border: 1px solid rgba(253, 35, 64, 0.886);"></td> 
+                </tr>
+            </table>
+        </fieldset>
+    </form></center>
+
+    <!-- js for redirecting page -->
+    <script>
+        function login_back()
+        {
+            location = "index.html";
+        }
+    </script>
+
+    <!-- footer -->
+    <footer>
+      <p style="text-align: center; padding-top: 15px;">
+        <i class="fa-brands fa-facebook px-3" style="font-size: 18pt;"></i>
+        <i class="fa-brands fa-instagram px-3" style="font-size: 18pt;"></i>
+        <i class="fa-brands fa-twitter px-3" style="font-size: 18pt;"></i>
+      </p>
+      <p style="font-size: 9pt; padding-bottom: 5px; text-align: center;">&copy; Copyright. &reg; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+
+<!-- 
+    Form
+    ----
+    <fieldset>  => border
+    <legend>    => text on border
+ -->

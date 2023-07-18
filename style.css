@@ -1,0 +1,26 @@
+body
+{
+    font-family: 'Belanosima', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 210, 213);
+}
+nav
+{
+    background-color: rgb(249, 68, 93);
+}
+nav a i
+{
+    color: white;
+}
+
+footer
+{
+    width: 100%;
+    height: auto;
+    background-color: rgb(249, 68, 93);
+    color: white;
+    margin-top: auto;
+}
+

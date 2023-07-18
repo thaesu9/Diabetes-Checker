@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Checker / Profile </title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/3337d2729a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: rgb(247, 210, 213);">
+    <!-- navigation bar -->
+    <nav class="navbar mb-1">
+        <div class="container-fluid">
+            <a class="navbar-brand p-1 ps-4 fs-1" onclick="diabetes()"><i class="fa-solid fa-heart-pulse"></i></a>
+            <a class="navbar-brand p-1 pe-4 fs-1 profile" onclick="profilejs()"><i class="fa-solid fa-circle-user"></i></a>    
+        </div>
+    </nav>
+
+    <!-- js for page redirecting -->
+    <script>
+        function profilejs()
+        {
+            location = 'profile.html';
+        }
+
+        function diabetes()
+        {
+            location = 'checker.html';
+        }
+    </script>
+
+    <div class="row mx-3 pt-4">
+        <!-- Personal Information -->
+        <div class="col-sm me-3 border border-2 card shadow" style="color: black; background-color: rgba(249, 68, 92, 0.525);">
+            <h5 class="py-3 m-0">Personal Information</h5>
+
+            <div class="row pt-1 m-1">
+                <div class="col">User ID: </div>
+                <div class="col">123456 </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 m-1">
+                <div class="col">Name: </div>
+                <div class="col">Groot </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 m-1">
+                <div class="col">Email: </div>
+                <div class="col">Groot@gmail.com </div> <!-- database -->
+            </div>
+        
+            <div class="row pt-2 m-1">
+                <div class="col">Contact Number: </div>
+                <div class="col">09-123456789 </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 mb-4 m-1">
+                <div class="col">Emergency Contact: </div>
+                <div class="col">09-123456789 </div> <!-- database -->
+            </div>
+        </div>
+
+        <!-- Medical Information -->
+        <div class="col-sm  border border-2 card shadow" style="color: black; background-color: rgba(249, 68, 92, 0.525);">
+            <h5 class="py-3 m-0">Medical Information</h5>
+
+            <div class="row pt-1 m-1">
+                <div class="col">Age: </div>
+                <div class="col">23 </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 m-1">
+                <div class="col">Weight: </div>
+                <div class="col">123 lb </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 m-1">
+                <div class="col">Current Medication: </div>
+                <div class="col">none </div> <!-- database -->
+            </div>
+        
+            <div class="row pt-2 m-1">
+                <div class="col">Allergies: </div>
+                <div class="col">none </div> <!-- database -->
+            </div>
+
+            <div class="row pt-2 mb-4 m-1">
+                <div class="col">Family History: </div>
+                <div class="col">No </div> <!-- database -->
+            </div>
+        </div>
+    </div>
+
+    <!-- table -->
+    <table class="table py-3 my-5">
+        <thead>
+            <tr>
+                <th scope="col">No.</th>
+                <th scope="col"> Date </th>
+                <th scope="col">Blood Sugar Level after Breakfast<br> (mg/dl)</th>
+                <th scope="col">Blood Sugar Level after Lunch<br> (mg/dl)</th>
+                <th scope="col">Blood Sugar Level after Dinner<br> (mg/dl)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th scope="row" > 1 </th>
+                <td> 3/2/2023 </td>
+                <td> Hello</td>
+                <td> Hello</td>
+                <td> Hello</td>
+            </tr>
+            <tr>
+                <th scope="row" > 2 </th>
+                <td> 4/30/2023 </td>
+                <td> Hello</td>
+                <td> Hello</td>
+                <td> Hello</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+
+    <!-- footer -->
+    <footer>
+      <p style="text-align: center; padding-top: 15px;">
+        <i class="fa-brands fa-facebook px-3" style="font-size: 18pt;"></i>
+        <i class="fa-brands fa-instagram px-3" style="font-size: 18pt;"></i>
+        <i class="fa-brands fa-twitter px-3" style="font-size: 18pt;"></i>
+      </p>
+      <p style="font-size: 9pt; padding-bottom: 5px; text-align: center;">&copy; Copyright. &reg; All Rights Reserved</p>
+    </footer>
+</body>
+</html>
